@@ -1,0 +1,6 @@
+/vendor/
+/test/
+keys.php
+composer.lock
+php.ini
+todo.md

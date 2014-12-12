@@ -1,0 +1,3 @@
+<?php
+
+define('ENVIRONMENT', ENVIRONMENT_PRODUCTION);
