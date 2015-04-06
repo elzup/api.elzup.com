@@ -1,0 +1,20 @@
+<?php
+
+define('ENVIRONMENT_DEVELOPMENT', 'dev');
+define('ENVIRONMENT_PRODUCTION', 'pro');
+if (file_exists('./env_pro.php')) {
+    require_once('./env_pro.php');
+} else {
+    define('ENVIRONMENT', ENVIRONMENT_DEVELOPMENT);
+}
+
+if (ENVIRONMENT == ENVIRONMENT_DEVELOPMENT) {
+    ORM::configure('mysql:host=localhost;dbname=my_database');
+    ORM::configure('username', 'database_user');
+    ORM::configure('password', 'top_secret');
+} else {
+    ORM::configure('mysql:host=localhost;dbname=my_database');
+    ORM::configure('username', 'database_user');
+    ORM::configure('password', 'top_secret');
+}
+

@@ -4,3 +4,8 @@ keys.php
 composer.lock
 php.ini
 todo.md
+
+.idea/
+
+/note/
+config/constants.php
